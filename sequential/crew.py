@@ -9,6 +9,6 @@ crew = Crew(
 )
 
 ## starting the task execution process
-
-result = crew.kickoff(inputs={'query': 'Machine learning vs deep learning'})
-print(result)
+if __name__ == "__main__":
+    result = crew.kickoff(inputs={'query': 'Machine learning vs deep learning'})
+    print(result)
