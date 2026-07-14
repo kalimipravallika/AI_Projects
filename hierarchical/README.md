@@ -83,7 +83,7 @@ Handle:
 
 ## 4. Electrical Appliance Specialist
 
-Handles:
+Handle:
 
 - Kitchen electrical sockets
 - Lighting
