@@ -72,7 +72,7 @@ Handles problems related to:
 
 ## 3. Water Tap Specialist
 
-Handles:
+Handle:
 
 - Water leakage
 - Pipe issues
