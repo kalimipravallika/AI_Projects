@@ -19,28 +19,35 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         project:
           - hierarchical
           - sequential
 
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: ${{ matrix.project }}/requirements.txt
 
       - name: Install Dependencies
         run: |
-          cd ${{ matrix.project }}
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pytest
 
       - name: Run Tests
+        env:
+          OPENAI_API_KEY: dummy-key
+          SERPER_API_KEY: dummy-key
         run: |
-          cd ${{ matrix.project }}
           python -m pytest -v
