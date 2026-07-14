@@ -1,6 +1,5 @@
 crewai
 crewai-tools 
-langchain-google_genai
 langchain
 langchain-cohere
 langchain-community
@@ -11,4 +10,3 @@ google-api-python-client
 python-dotenv
 langchain-openai
 openai
-chatopenai
