@@ -10,7 +10,7 @@ import os
 llm=LLM(
     model="gpt-4o-mini",
     temperature=0.5,
-    api_key=os.getenv("OPENAI_API_KEY")
+    api_key=os.getenv("OPENAI_API_KEY") 
 )
 
 # Creating a senior researcher agent 

@@ -48,7 +48,7 @@ The system uses a **Hierarchical Process**, where a **Kitchen Support Manager** 
 
 ## 1. Kitchen Support Manager
 
-### Responsibilities
+## Responsibilities
 
 - Analyze the reported issue
 - Identify the appropriate specialist
