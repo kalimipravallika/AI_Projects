@@ -101,6 +101,7 @@ crew = Crew(
 )
 
 #Running the System
-result=crew.kickoff(inputs={'topic':"In my kitchen, the cupboard door is misaligned and the water tap is leaking. I also have a problem with the electrical socket near the sink."})
-print(result)
+if __name__ == "__main__":
+    result = crew.kickoff(inputs={'topic': "In my kitchen, the cupboard door is misaligned and the water tap is leaking. I also have a problem with the electrical socket near the sink."})
+    print(result)
 
