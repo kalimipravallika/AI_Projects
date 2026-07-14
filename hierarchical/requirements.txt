@@ -1,12 +1,8 @@
 crewai
-crewai-tools 
+crewai-tools
 langchain
-langchain-cohere
-langchain-community
 langchain-core
-google-ai-generativelanguage
-google-api-core
-google-api-python-client
-python-dotenv
 langchain-openai
 openai
+python-dotenv
+pytest
